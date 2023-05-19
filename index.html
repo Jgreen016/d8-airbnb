@@ -1,11 +1,8 @@
-<!--NOTES
-change fonts
-profile dropdown menu + icon*
-profile 'Become a Host' + globe + dropdown menu spacing
-link underline sizing
+<!--
+NOTES:
+nav items-center vs items-baseline
 search button align to the right
-
-*can't find "dropdown" on tailwind-->
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +13,7 @@ search button align to the right
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black">
-    <nav class="mx-auto h-20 w-10/12 mt-6 flex justify-between text-white">
+    <nav class="mx-auto h-20 w-10/12 mt-6 flex justify-between items-center text-white">
         <img class="max-h-10 max-w-10" src="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-symbol.jpg" href="https://img.buzzfeed.com/buzzfeed-static/static/2019-08/12/18/asset/0c323b2f7bb9/anigif_sub-buzz-4770-1565633123-1.gif">
         </img>
         <div class="h-10 w-96 flex justify-between no-underline">
@@ -24,9 +21,9 @@ search button align to the right
             <a class="hover:underline decoration-2 underline-offset-8" href="">Experiences</a>
             <a class="hover:underline decoration-2 underline-offset-8" href="">Online Experiences</a>
         </div>
-        <div class="bg-green-300 border-2 border-black h-10 flex items-center">
-            <a class="hover:underline" href="">Become a Host</a>
-            <img class="max-h-5 max-w-5" src="https://www.citypng.com/public/uploads/preview/internet-globe-white-icon-download-png-11637035078xsmw30yh5k.png"></img>
+        <div class="border-2 border-black h-10 flex items-center">
+            <a class="hover:underline decoration-2 underline-offset-8 mr-5" href="">Become a Host</a>
+            <img class="max-h-5 max-w-5 mr-5" src="https://www.citypng.com/public/uploads/preview/internet-globe-white-icon-download-png-11637035078xsmw30yh5k.png"></img>
             <div class="bg-white border-2 border-white rounded-full flex items-center py-2 px-2">
                 <img class="max-h-3 w-3" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png"></img>
                 <img class="max-h-7 w-7 pl-3" src="https://thumb.ac-illust.com/8f/8fd63ba7aff413616a11bb550af535c3_t.jpeg"></img>
