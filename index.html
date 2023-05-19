@@ -1,19 +1,11 @@
 <!--NOTES
-Links font family
+change fonts
 profile dropdown menu + icon*
-profile 'Become a Host' font family
-underline sizing
-navbar formatting commit
+profile 'Become a Host' + globe + dropdown menu spacing
+link underline sizing
+search button align to the right
 
-
-
-QUESTIONS
-Search bar Form?
-Search bar Table?
-Search bar Button inside?
-
-*can't find "dropdown" on tailwind
--->
+*can't find "dropdown" on tailwind-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,16 +20,16 @@ Search bar Button inside?
         <img class="max-h-10 max-w-10" src="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-symbol.jpg" href="https://img.buzzfeed.com/buzzfeed-static/static/2019-08/12/18/asset/0c323b2f7bb9/anigif_sub-buzz-4770-1565633123-1.gif">
         </img>
         <div class="h-10 w-96 flex justify-between no-underline">
-            <a class="hover:underline" href="">Places to stay</a>
-            <a class="hover:underline" href="">Experiences</a>
-            <a class="hover:underline" href="">Online Experiences</a>
+            <a class="hover:underline decoration-2 underline-offset-8" href="">Places to stay</a>
+            <a class="hover:underline decoration-2 underline-offset-8" href="">Experiences</a>
+            <a class="hover:underline decoration-2 underline-offset-8" href="">Online Experiences</a>
         </div>
-        <div class="bg-green-300 border-2 border-black h-10 flex">
+        <div class="bg-green-300 border-2 border-black h-10 flex items-center">
             <a class="hover:underline" href="">Become a Host</a>
             <img class="max-h-5 max-w-5" src="https://www.citypng.com/public/uploads/preview/internet-globe-white-icon-download-png-11637035078xsmw30yh5k.png"></img>
-            <div class="bg-white border-2 border-white rounded-full flex px-4">
-                <img class="max-h-5 w-5" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png"></img>
-                <img class="max-h-7 w-7" src="https://thumb.ac-illust.com/8f/8fd63ba7aff413616a11bb550af535c3_t.jpeg"></img>
+            <div class="bg-white border-2 border-white rounded-full flex items-center py-2 px-2">
+                <img class="max-h-3 w-3" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png"></img>
+                <img class="max-h-7 w-7 pl-3" src="https://thumb.ac-illust.com/8f/8fd63ba7aff413616a11bb550af535c3_t.jpeg"></img>
             </div>
         </div>
     </nav><br>
@@ -59,9 +51,17 @@ Search bar Button inside?
                 <input type="search" id="numguestinputsearch" name="numguestinputsearch" placeholder="Add guests">
             </div>
             <button type="submit">
-                <img class="max-h-7 w-7" src="https://banner2.cleanpng.com/20180530/ju/kisspng-computer-icons-dictionary-glossary-word-5b0e2f360c6073.9797485515276562460507.jpg"></img>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="red" class="w-20 h-20">
+                    <path d="M6.5 9a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z" />
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 5a4 4 0 102.248 7.309l1.472 1.471a.75.75 0 101.06-1.06l-1.471-1.472A4 4 0 009 5z" clip-rule="evenodd" />
+                </svg>                  
             </button>
     </div><br>
-    <div class="bg-red-500 mx-auto h-96 w-10/12"> call to action</div><br>
+    <div class="bg-red-500 mx-auto py-40 h-45 w-10/12 rounded-xl">
+        <div class="text-5xl text-white font-semibold flex justify-center">Help house 100,000 refugees fleeing Ukraine</div><br><br>
+        <div class="flex justify-center">
+            <button class="border-2 border-white text-white rounded-xl px-2 py-2" type="submit">Learn more</button>
+        </div>
+    </div><br>
 </body>
 </html>
